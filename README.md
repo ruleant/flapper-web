@@ -9,11 +9,14 @@ Usage
 - Copy folder to a path reachable by the webserver, fe. /var/www/html
 
 - Modify the config file to set path to input and output file.
-Remark : the files should be readable by the user running the webserver,
-the inputfile should also be writable.
 
-chgrp www-data /path/to/input.txt
-chmod g+rw /path/to/input.txt
+Remark : the files should be readable by the user running the webserver,
+the inputfile should also be writable :
+
+<pre>
+ chgrp www-data /path/to/input.txt
+ chmod g+rw /path/to/input.txt
+</pre>
 
 License
 -------
