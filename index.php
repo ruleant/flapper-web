@@ -56,8 +56,13 @@ $data = array_slice(file($outputFile), -1 * $maxLines);
 
 echo "<h2>Last " . count($data) . " lines :</h2>";
 
-foreach ($data as $line) {
-    echo htmlspecialchars($line) . "<br />";
+if (count($data) > 0) {
+
+    foreach ($data as $line) {
+        echo htmlspecialchars($line) . "<br />";
+    }
+} else {
+    echo "Output file is empty, does not exist, or is not readable.";
 }
 ?>
 </body>
