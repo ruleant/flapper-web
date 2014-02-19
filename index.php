@@ -32,6 +32,8 @@
  * @link      https://github.com/ruleant/flapper-web
  */
 
+include "config.inc.php";
+
 ?>
 <!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
 <html>
@@ -48,12 +50,9 @@
 <?php
 
 // print last n lines of file
-$maxLines = 10;
-$myFile = "input.txt";
-
 // code based on a suggestion by http://stackoverflow.com/users/296308/lotus-notes
 // on http://stackoverflow.com/questions/2961618/how-to-read-only-5-last-line-of-the-text-file-in-php
-$data = array_slice(file($myFile), -1 * $maxLines);
+$data = array_slice(file($outputFile), -1 * $maxLines);
 
 echo "<h2>Last " . count($data) . " lines :</h2>";
 

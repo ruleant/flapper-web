@@ -31,14 +31,14 @@
  * @version   GIT: 0.1-dev
  * @link      https://github.com/ruleant/flapper-web
  */
+include "config.inc.php";
 
 // read input var
 if (! empty($_REQUEST["input"])) {
     $input = $_REQUEST["input"];
 
     // append input to file
-    $myFile = "input.txt";
-    $fh = fopen($myFile, 'a') or die("can't open file");
+    $fh = fopen($inputFile, 'a') or die("can't open file");
     fwrite($fh, $input . "\n");
     fclose($fh);
 }
