@@ -31,7 +31,8 @@
  * @version   GIT: 0.1-dev
  * @link      https://github.com/ruleant/flapper-web
  */
-include "config.inc.php";
+
+require "config.inc.php";
 
 // read input var
 if (! empty($_REQUEST["input"])) {
