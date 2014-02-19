@@ -3,7 +3,7 @@ flapper-web
 
 Web interface for flapper project
 
-Writes a text, submitted by a form to an input file
+Writes a text, submitted by a web form, to an input file
 and displays the last n lines of the output file.
 
 Usage
