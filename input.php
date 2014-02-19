@@ -39,7 +39,7 @@ if (! empty($_REQUEST["input"])) {
     // append input to file
     $myFile = "input.txt";
     $fh = fopen($myFile, 'a') or die("can't open file");
-    fwrite($fh, $input);
+    fwrite($fh, $input . "\n");
     fclose($fh);
 }
 
