@@ -11,7 +11,7 @@ Usage
 
 - Copy folder to a path reachable by the webserver, fe. /var/www/html
 
-- Modify the config file to set path to input and output file.
+- Modify the config file to set path to input and output file. (these files should be outside the website folders, ie. not accessible on the web)
 
 Remark : the files should be readable by the user running the webserver,
 the inputfile should also be writable :
