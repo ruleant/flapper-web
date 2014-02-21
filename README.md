@@ -1,7 +1,7 @@
 flapper-web
 ===========
 
-Web interface for flapper project
+Web interface for splitflap project
 
 Writes a text, submitted by a web form, to an input file
 and displays the last n lines of the output file.
